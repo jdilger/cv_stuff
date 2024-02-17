@@ -1,0 +1,229 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape John Dilger} \\ \vspace{1pt}
+    \small 831-676-6111 $|$ \href{mailto:johnjdilger@gmail.com}{\underline{johnjdilger@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/john-dilger}{\underline{linkedin.com/in/john-dilger}} $|$
+    \href{https://github.com/jdilger}{\underline{github.com/jdilger}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of San Francisco}{San Francisco, CA}
+      {Bachelor of Science in Environmental Science}{2013 -- 2016}
+    \resumeSubheading
+      {University of San Francisco}{San Francisco, CA}
+      {Graduate Geospatial Technology Certification}{2016}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Sr. Data Scientist}{2022 -- 2024}
+      {Astraea}{Remote - Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Developed production analytics for road segmentation, forest loss, construction monitoring, and substation identification. Tech: Python, PyTorch, GDAL, Docker}
+        \resumeItem{Developed 20+ pipelines for ML batch prediction, ETL, and model training. Tech: Metaflow, Argo, Docker, Python}
+        \resumeItem{Developed internal tools for managing and updating data science databases. Tech: Python, Postgresql/PostGIS}
+        \resumeItem{Improved query time for utility owned property analytic. Reduced query time from ~25 minutes to ~2 seconds for parcel table spanning 155MM records. Tech: Postgresql/PostGIS}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+    % \resumeSubSubheading
+    %   {Software Engineer I}{Oct 2014 - Sep 2016}
+    %   \resumeItemListStart
+    %     \resumeItem{Apache Beam}
+    %       {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+    %   \resumeItemListEnd
+    % % \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Geospatial Data Scientist}{2018 -- 2022}
+      {Spatial Informatics Group}{Remote - San Francisco, CA}
+      \resumeItemListStart
+        \resumeItem{Created insights and automated workflows for forest carbon monitoring, restoration planning, and forest monitoring reporting and validation. Tech: Google Earth Engine, Python, GIS, SQL}
+        \resumeItem{Researched and developed geospatial applications using computer vision for areas of crop mapping, invasive species detection, and illegal gold mining. Tech: Tensorflow, Google Earth Engine, Python, Google Cloud Platform}
+        \resumeItem{Created ETL pipelines for batch data ingestion/export from Google Earth Engine. Tech: Python, Google Storage, Google Earth Engine}
+        \resumeItem{Manage IAM and resources for the Environmental Mapping team. Tech: Google Cloud Platform}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Geoinformatic Fellowship}{2017 -- 2018}
+      {NASA DEVELOP National Program - SSA}{Moffit Field, CA}
+      \resumeItemListStart
+        \resumeItem{Served as point of contact for GIS -ArcMap, ENVI, QGIS-, remote sensing, and scripting -Python, JavaScript- needs for ~50 NASA DEVELOP project teams as part of a 3 person team.}
+        \resumeItem{Directly collaborated with Ames Research Center DEVELOP project teams processing multispectral remotely sensed imagery -Landsat, RapidEye, Sentinel-2- and supporting geospatial analysis.}
+        \resumeItem{Managed software release process of 5 project teams.}
+        \resumeItem{Managed NASA DEVELOP Google Earth Engine repository and helped manage NASA DEVELOP GitHub.}
+      \resumeItemListEnd
+    \resumeSubSubheading
+      {Earth Science Contractor}{2017}
+  % \resumeSubHeadingListEnd
+
+  \resumeSubheading
+  {LiDAR and Geospatial Analyst Volunteer}{2016 -- 2017}
+  {University of San Francisco Geospatial Analysis Lab}{San Francisco, CA}
+  % \resumeItemListStart
+  %   \resumeItem{Served as point of contact for GIS -ArcMap, ENVI, QGIS-, remote sensing, and scripting -Python, JavaScript- needs for ~50 NASA DEVELOP project teams as part of a 3 person team.}
+  %   \resumeItem{Directly collaborated with Ames Research Center DEVELOP project teams processing multispectral remotely sensed imagery -Landsat, RapidEye, Sentinel-2- and supporting geospatial analysis.}
+  %   \resumeItem{Managed software release process of 5 project teams.}
+  %   \resumeItem{Managed NASA DEVELOP Google Earth Engine repository and helped manage NASA DEVELOP GitHub.}
+  % \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Se.plan} $|$ \emph{Python, Google Earth Engine, ipyvuetify}}{June 2020 -- Present}
+          \resumeItemListStart
+            \resumeItem{Application for planning forest restoration activities based upon user constraints, restoration goals, and cost for low and middle-income countries.}
+            \resumeItem{Developed core code for analysis and dashboard using Google Earth Engine Python API.}
+            \resumeItem{Assisted in front-end development using Jupyter notebooks, Voila, and Ipyvueify.}
+            \resumeItem{Application is hosted on the U.N. Food and Agriculture SEPAL platform}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Post Fire Vegetation Monitoring Plumas County, USA} $|$ \emph{Python, Google Earth Engine, Django}}{May 2018 -- May 2020}
+          \resumeItemListStart
+            \resumeItem{DThis system provides land managers systematic updates for areas burned by wildfire, including changes in vegetation cover on a yearly cadence from 1984 onward.}
+            \resumeItem{Wrote image preprocessing and analysis using Google Earth Engine Python API.}
+            \resumeItem{Maintained and updated front-end Django website over 2 years.}
+            \resumeItem{Landcover classification was done using a random forest, trained on multi year features, and had an $R^2$ of 0.87.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, Python, C/C++, SQL (Postgres), JavaScript, HTML/CSS, R} \\
+     \textbf{Frameworks}{: React, Node.js, Flask, JUnit, WordPress, Material-UI, FastAPI} \\
+     \textbf{Developer Tools}{: Git, Docker, TravisCI, Google Cloud Platform, VS Code, Visual Studio, PyCharm, IntelliJ, Eclipse} \\
+     \textbf{Libraries}{: pandas, NumPy, Matplotlib}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
